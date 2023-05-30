@@ -1,0 +1,126 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  background: #fdf7ff94;
+}
+.container{
+  width: 100%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: #f5ddff;
+  border-radius: 10px;
+  overflow: hidden;   
+}
+
+th,
+td {
+  padding: 0.75rem;
+  text-align: center;
+  vertical-align: middle;
+  border-top: 1px solid #ceb0db;
+  font-size: 20px;
+}
+
+thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+.table {
+  font-size: 0.9rem;
+  color: #693082;
+  min-height: 150px;
+}
+.table thead th {
+  font-weight: 700;
+  font-size: initial;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  background-color: #cc6ff4;
+  color: #ffffff;
+}
+.table tbody tr:nth-of-type(even) {
+  background-color: #f5ddff;
+}
+.table tbody tr:hover {
+  background-color: rgba(142, 18, 219, 0.071);
+}
+
+.table__button {
+background-color: #e7b0ff;
+color: #693082;
+border: 2px solid #693082;
+padding: 9px 40px;
+border-radius: 50px;
+overflow: hidden;
+cursor: pointer;
+transition: background-color 0.3s ease-in-out;
+font-size: 17px;
+}
+.table__button:hover {
+  background-color: #dc9cf8;
+}
+.table__button:active {
+  background-color: #c988e5;
+}
+.table_image{
+  width: 160px;
+  border-radius: 15px;
+  overflow: hidden;
+  max-height: 100px;
+}
+.btn {
+display: flex;	
+justify-content: center;
+  padding: 24px 0;
+  font-size: 16px;
+  color: #fff;
+  background-color: #cc6ff4;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 50px;
+  overflow: hidden;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #bb55e6;
+}
+
+.btn:active {
+  background-color: #a935db;
+}
+
+.table_id{
+  background: #eccef9;
+}
+.total_div{
+  padding: 15px;
+  margin-bottom: 1rem;
+  background-color: #f5ddff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+

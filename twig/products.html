@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/products.css">
+    <title>Products</title>
+</head>
+<body>
+    <table class="table container">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Изображение</th>
+                <th>Наименование</th>
+                <th>Цена</th>
+                <th>Корзина</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- позволяет проходить по списку продуктов и выводить информацию о каждом продукте в отдельной строке таблицы -->
+            {% for product in products %}
+            <tr>
+                <td class="table_id">{{ product.id }}</td>
+                <td><img src="{{ product.image }}" class="table_image"></td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.price }}</td>
+                <td>
+                    <form>
+                        <input type="hidden" name="product_id" value="{{ product.id }}">
+                        <button type="button" class="table__button" onclick="addToCart(this)">Добавить</button>
+                      </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <div class="container">
+        <a href="/cart" class="btn">Перейти в корзину</a>
+    </div>
+    <script src="add_to_cart.js"></script>
+</body>
+</html>
